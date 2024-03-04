@@ -28,6 +28,12 @@ namespace NativeClipboard {
     REACT_METHOD(SetString, L"setString");
     void SetString(std::string const& str) noexcept;
 
+    REACT_METHOD(SetHtmlAndString, L"setHtmlAndString");
+    void SetHtmlAndString(std::string const& html, std::string const& str) noexcept;
+
+    REACT_METHOD(GetHtml, L"getHtml");
+    void GetHtml(React::ReactPromise<std::string>&& promise) noexcept;
+
     REACT_METHOD(AddListener, L"addListener");
     void AddListener(std::string const& event) noexcept;
 
