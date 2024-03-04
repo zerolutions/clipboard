@@ -30,7 +30,19 @@ export const Clipboard = {
    */
   getStrings(): Promise<string[]> {
     return NativeClipboard.getStrings();
-  },
+  }, 
+  /**
+  * (Windows Only)
+  * Get content of HTML type, this method returns a `Promise`, so you can use following code to get clipboard content
+  * ```javascript
+  * async _getContent() {
+  *   var content = await Clipboard.getHtml();
+  * }
+  * ```
+  */
+ getHtml(): Promise<string> {
+   return NativeClipboard.getHtml();
+ },
   /**
    * Get clipboard image as PNG in base64, this method returns a `Promise`, so you can use following code to get clipboard content
    * ```javascript
@@ -106,6 +118,20 @@ export const Clipboard = {
   setStrings(content: string[]) {
     NativeClipboard.setStrings(content);
   },
+  /**
+  * (Windows Only)
+  * Set content of HTML and plain text type. You can use following code to set clipboard content
+  * ```javascript
+  * _setContent() {
+  *   Clipboard.setHtmlAndString('<p>hello world</p>', 'hello world');
+  * }
+  * ```
+  * @param html the HTML content to be stored in the clipboard.
+  * @param text the plain text content to be stored in the clipboard.
+  */
+ setHtmlAndString(html: string, text: string) {
+   NativeClipboard.setHtmlAndString(html, text);
+ },
   /**
    * Returns whether the clipboard has content or is empty.
    * This method returns a `Promise`, so you can use following code to get clipboard content
