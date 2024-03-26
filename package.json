@@ -8,13 +8,13 @@
     "react-native",
     "setString"
   ],
-  "homepage": "https://github.com/zerolutions/clipboard#readme",
+  "homepage": "https://github.com/zerolutions/react-native-clipboard#readme",
   "bugs": {
-    "url": "https://github.com/zerolutions/clipboard/issues"
+    "url": "https://github.com/zerolutions/react-native-clipboard/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zerolutions/clipboard.git"
+    "url": "git+https://github.com/zerolutions/react-native-clipboard.git"
   },
   "license": "MIT",
   "author": "Roland Zechner <norz@duck.com>",
