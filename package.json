@@ -1,5 +1,5 @@
 {
-  "name": "@react-native-clipboard/clipboard",
+  "name": "@zerolutions/react-native-clipboard",
   "version": "1.13.3-zerolutions",
   "description": "React Native Clipboard API for macOS, iOS, Android, and Windows",
   "keywords": [
@@ -8,16 +8,16 @@
     "react-native",
     "setString"
   ],
-  "homepage": "https://github.com/react-native-clipboard/clipboard#readme",
+  "homepage": "https://github.com/zerolutions/clipboard#readme",
   "bugs": {
-    "url": "https://github.com/react-native-clipboard/clipboard/issues"
+    "url": "https://github.com/zerolutions/clipboard/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/react-native-clipboard/clipboard.git"
+    "url": "git+https://github.com/zerolutions/clipboard.git"
   },
   "license": "MIT",
-  "author": "M.Haris Baig <harisbaig100@gmail.com>",
+  "author": "Roland Zechner <norz@duck.com>",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
